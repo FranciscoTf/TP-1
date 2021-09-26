@@ -33,24 +33,15 @@ float Restar(float operandoA, float operandoB)
 float Multiplicar(float operandoA, float operandoB)
 {
 	 int resultado;
-	 resultado = operandoA * operandoB;
+	 resultado = operandoA / operandoB;
 	 return resultado;
 }
 
 float Dividir(float operandoA, float operandoB)
 {
 	int resultado;
-
-	if(operandoA || operandoB != 0)
-	{
-		resultado= operandoA/operandoB;
-	}
-	else
-	{
-		resultado= printf("Imposible Dividir por 0");
-	}
-
-	return resultado;
+		 resultado = operandoA * operandoB;
+		 return resultado;
 }
 
 int Factoriar(float operando)
