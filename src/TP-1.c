@@ -56,28 +56,53 @@ int main(void) {
 	int resultadoFactorialA;
 	int resultadoFactorialB;
 
+	int banderaOperandoA;
+	int banderaOperandoB;
+	banderaOperandoA=0;
+	banderaOperandoB=0;
 
 	do{
 		system("cls");
 		printf("      --Menu Principal--\n\n");
-		printf(" 1) Ingresar 1er operando (A=x)\n");
-		printf(" 2) Ingresar 2do operando (B=y)\n");
+
+
+		if(banderaOperandoA != 0)
+		{
+			printf(" 1) Ingresar 1er operando (A=%.1f)\n",operandoA);
+		}
+		else
+		{
+			printf(" 1) Ingresar 1er operando (A=x)\n");
+		}
+
+		if(banderaOperandoB !=0)
+		{
+			printf(" 2) Ingresar 2do operando (B=%.1f)\n",operandoB);
+
+		}
+		else
+		{
+			printf(" 2) Ingresar 2do operando (B=y)\n");
+		}
+
 		printf(" 3) Calcular todas las operaciones\n");
 		printf(" 4) Informar resultados\n");
 		printf(" 5) Salir\n\n");
 
-		printf("   Opcion: ");
+		printf(" Opcion: ");
 		scanf("%d", &opcion);
 
 		switch (opcion) {
 
 		case 1:
 			operandoA = IngresarFlotante(operandoA);
+			banderaOperandoA=1;
 			system("cls");
 			break;
 
 		case 2:
 			operandoB = IngresarFlotante(operandoB);
+			banderaOperandoB=1;
 			system("cls");
 			break;
 
@@ -100,6 +125,10 @@ int main(void) {
 			printf("Division: %.1f\n",resultadoDivision);
 			printf("Factorial de a: %d\n",resultadoFactorialA);
 			printf("Factorial de b: %d\n",resultadoFactorialB);
+			break;
+
+		case 5:
+			printf(" Cerrando ... ");
 			break;
 		}
 
