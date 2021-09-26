@@ -62,27 +62,27 @@ int main(void) {
 	banderaOperandoB=0;
 
 	do{
-		system("cls");
-		printf("      --Menu Principal--\n\n");
+		printf("----------------------------------- \n");
+		printf("        --Menu Principal--\n\n");
 
 
 		if(banderaOperandoA != 0)
 		{
-			printf(" 1) Ingresar 1er operando (A=%.1f)\n",operandoA);
+			printf(" 1) Ingresar 1er operando (A = %.1f)\n",operandoA);
 		}
 		else
 		{
-			printf(" 1) Ingresar 1er operando (A=x)\n");
+			printf(" 1) Ingresar 1er operando (A = x)\n");
 		}
 
 		if(banderaOperandoB !=0)
 		{
-			printf(" 2) Ingresar 2do operando (B=%.1f)\n",operandoB);
+			printf(" 2) Ingresar 2do operando (B = %.1f)\n",operandoB);
 
 		}
 		else
 		{
-			printf(" 2) Ingresar 2do operando (B=y)\n");
+			printf(" 2) Ingresar 2do operando (B = y)\n");
 		}
 
 		printf(" 3) Calcular todas las operaciones\n");
@@ -91,6 +91,7 @@ int main(void) {
 
 		printf(" Opcion: ");
 		scanf("%d", &opcion);
+
 
 		switch (opcion) {
 
@@ -130,6 +131,9 @@ int main(void) {
 		case 5:
 			printf(" Cerrando ... ");
 			break;
+
+		default:
+			printf("  ¡¡Ingrese una opcion valida!!\n");
 		}
 
 	}while(opcion != 5);

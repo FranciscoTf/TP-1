@@ -11,7 +11,7 @@
 
 float IngresarFlotante(){
 	float flotante;
-	printf("Ingresar Valor: ");
+	printf(" Ingresar Valor: ");
 	scanf("%f",&flotante);
     return flotante;
 }
@@ -57,4 +57,7 @@ int Factoriar(float operando)
 	return factorial;
 
 }
+
+
+
 
